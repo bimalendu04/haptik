@@ -1,0 +1,17 @@
+.mainSearchBarContainer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchInput {
+    height: 20px;
+}
+
+.sortBtn {
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}

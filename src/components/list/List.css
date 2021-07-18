@@ -1,0 +1,27 @@
+.mainListContainer {
+    max-height: 400px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+}
+
+.nameContainer {
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.subText {
+    font-size: 14px;
+}
+
+.actionsContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

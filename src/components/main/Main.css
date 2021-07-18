@@ -1,0 +1,18 @@
+.mainContainer {
+    width: 400px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.nameInput {
+    height: 40px;
+    width: 90%;
+}
+
+.active {
+    background-color: #FF5733;
+}

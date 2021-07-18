@@ -1,0 +1,8 @@
+export const ActionType = {
+    SET_SEARCH_TEXT: "SET_SEARCH_TEXT",
+    SET_NAME: "SET_NAME",
+    ADD_FRIEND: "ADD_FRIEND",
+    TOGGLE_FAV: "TOGGLE_FAV",
+    TOGGLE_SORT: "TOGGLE_SORT",
+    DELETE: "DELETE"
+}
