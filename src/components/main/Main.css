@@ -16,3 +16,9 @@
 .active {
     background-color: #FF5733;
 }
+
+@media only screen and (max-width: 600px) {
+    .mainContainer {
+        width: 85%;
+    }
+}

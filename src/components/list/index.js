@@ -22,7 +22,7 @@ function List(props) {
                 if (friends.name.toLowerCase().includes(props.state.searchedText.toLowerCase())) {
                     return <div className="list" key={friends.id}>
                         <div className="nameContainer">
-                            <div>{friends.name}</div>
+                            <div className="friendName">{friends.name}</div>
                             <div className="subText">is your friend</div>
                         </div>
                         <div className="actionsContainer">
