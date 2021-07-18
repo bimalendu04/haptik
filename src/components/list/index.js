@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 function List(props) {
 
-    const filteredList = React.useMemo(() => {
+    const sortedList = React.useMemo(() => {
         if (props.state.isSort) {
             return _.cloneDeep(props.state.friendList).sort((x, y) => {
                 if (props.state.isSort) {
@@ -18,7 +18,7 @@ function List(props) {
 
     return <div className="mainListContainer">
         {
-            filteredList.map((friends) => {
+            sortedList.map((friends) => {
                 if (friends.name.toLowerCase().includes(props.state.searchedText.toLowerCase())) {
                     return <div className="list" key={friends.id}>
                         <div className="nameContainer">
@@ -31,6 +31,7 @@ function List(props) {
                         </div>
                     </div>
                 }
+                return <></>
             }).filter(Boolean)
         }
     </div>
