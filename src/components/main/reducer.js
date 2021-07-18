@@ -30,6 +30,16 @@ export function reducer(state, action) {
             };
         }
 
+        case ActionType.DELETE: {
+            let friendList = _.cloneDeep(state.friendList);
+            let indexToDelete = _.findIndex(friendList, { id: action.payload });
+            friendList.splice(indexToDelete, 1);
+
+            return {
+                ...state,
+                ...{ friendList }
+            };
+        }
         
         case ActionType.TOGGLE_SORT: {
 
